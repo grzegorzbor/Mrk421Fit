@@ -1,0 +1,17 @@
+name: fitMrk421
+dependencies:
+  - python>=3.9,<3.12
+  - astropy>=5.0,<6.0
+  - numpy>=1.21
+  - scipy>=1.5,<1.10
+  - matplotlib>=3.4,<=3.9
+  - gammapy<1.2
+  - sherpa>=4.8.0
+  - pandas
+  - pyvo
+  - pip
+  - pip:
+    - -e ../agnpy
+channels:
+  - conda-forge
+  - https://cxc.cfa.harvard.edu/conda/sherpa

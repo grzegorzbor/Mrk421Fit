@@ -73,7 +73,7 @@ n_e = BrokenPowerLaw.from_total_energy_density(
     mass=m_e,
     p1=params.a1,
     p2=params.a2,
-    gamma_min=params.y_pr_min ** 1e3,
+    gamma_min=params.y_pr_min * 1e3,
     gamma_b=params.y_pr_br * 1e5,
     gamma_max=params.y_pr_max * 1e6
 )

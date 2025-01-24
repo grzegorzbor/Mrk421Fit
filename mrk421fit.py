@@ -18,7 +18,7 @@ from gammapy.modeling.models import SkyModel
 MJD = 57757
 
 # Load the params from Table 5, see https://www.aanda.org/articles/aa/full_html/2021/11/aa41004-21/T5.html
-df = pd.read_fwf("Table5", header=None, widths=[10, 7, 7, 7, 7]).set_index(0).T
+df = pd.read_csv("Table5", header=None, sep="\\s+").set_index(0).T
 df.columns.name = None
 df.set_index("MJD", inplace=True)
 df.index = df.index.astype(int)
